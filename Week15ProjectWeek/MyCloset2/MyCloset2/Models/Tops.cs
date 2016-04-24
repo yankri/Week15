@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace MyClosetApp.Models
+namespace MyClosetApp.Models   //I accidentally messed up the namespace when I copied the code from my original project (that I broke irreparably).
 {
-    public class Tops : MyCloset2.Models.IPhotoGiver
+    public class Tops : MyCloset2.Models.IPhotoGiver //implements the interface
     {
         [Key]
         public int TopsID { get; set; }

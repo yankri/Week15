@@ -254,6 +254,7 @@
     <Content Include="Views\Bottoms\Manager.cshtml" />
     <Content Include="Views\Accessories\Manager.cshtml" />
     <Content Include="Views\Home\Spring.cshtml" />
+    <Content Include="Views\Home\Summer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

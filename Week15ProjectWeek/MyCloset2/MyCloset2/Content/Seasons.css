@@ -1,8 +1,8 @@
-﻿body {
-}
+﻿/*This stylesheet is for the spring and summer thumbnail pages */
+
 .dropdown-menu {
     font-family:'Oswald', sans-serif;
 }
-.thumbnail {
+.thumbnail { /*Keeps pictures from being too tall*/
     max-height: 300px;
 }

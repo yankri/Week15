@@ -1,4 +1,6 @@
-﻿body {
+﻿/*This stylesheet styles the index pages for each of the clothing types*/
+
+body {
     font-family: 'Dancing Script', cursive;
 }
 .dropdown-menu {
@@ -7,12 +9,9 @@
 a {
     text-align: center;
 }
- a > .thumbnail, .thumbnail:hover {
-    border-color: #EB928D;
-}
 
 
- /*If nothing in there*/
+ /*If nothing in the database, this code styles the error message*/
  #nullimage {
     text-align: center;
 }

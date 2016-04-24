@@ -1,10 +1,12 @@
-﻿.navbar {
+﻿/*This stylesheet styles the homepage*/
+
+.navbar {
     margin-bottom: 0px; /*gets rid of space between navbar and jumbotron*/
 }
-.dropdown-menu {
+.dropdown-menu {  /*Changes drop down menu font*/
     font-family:'Oswald', sans-serif;
 }
-/*jumtron formatting*/
+/*tron formatting*/
 
 .jumbotron {
     background: url(http://www.architectureartdesigns.com/wp-content/uploads/2014/05/1613-630x350.jpg) no-repeat center center;
@@ -12,11 +14,11 @@
     background-size: cover;
     height: 500px;
 }
+
 #top {
     font-size: 75px;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0px 0px 8px #C3E1E8;
-
 }
 
 #middle {
@@ -26,10 +28,10 @@
     margin-left: 200px;
 }
 #bottom {
-    font-size: 75px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    font-family: 'Dancing Script', sans-serif;
     text-shadow: 0px 0px 8px #C3E1E8;
-    margin-left: 400px;
+    margin-left: 100px;
 }
 
 /*carousel*/

@@ -9,9 +9,9 @@ namespace MyClosetApp.Controllers
 {
     public class HomeController : Controller
     {
-        private MyCloset2Context db = new MyCloset2Context();
+        private MyCloset2Context db = new MyCloset2Context(); //adds the database context to the controller
 
-        public List<IPhotoGiver> GetListofAllItems ()
+        public List<IPhotoGiver> GetListofAllItems ()  //This method takes all the DB files from the other models and adds them to one list
         {
             List<IPhotoGiver> allItems = new List<IPhotoGiver>();
             allItems.AddRange(db.Tops.ToList());
@@ -22,16 +22,21 @@ namespace MyClosetApp.Controllers
             return allItems;
         }
 
-        public ActionResult Index()
+        public ActionResult Index() //Used on the homepage to be able to have the carousel display photos from all models
         {
             List <IPhotoGiver> allItems = GetListofAllItems();
 
             return View(allItems);
         }
-        public ActionResult Spring()
+        public ActionResult Spring()  //Used on the spring page, accessible from the homepage spring thumbnail
         {
             List<IPhotoGiver> allItems = GetListofAllItems();
 
+            return View(allItems);
+        }
+        public ActionResult Summer() //Summer thumbnail
+        {
+            List<IPhotoGiver> allItems = GetListofAllItems();
             return View(allItems);
         }
     }
